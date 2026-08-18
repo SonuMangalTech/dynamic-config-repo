@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: DynamicConfig
+
+# add below config, if using spring-cloud-config like github
+  config:
+    import: "configserver:http://localhost:8888"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

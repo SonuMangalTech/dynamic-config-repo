@@ -1,0 +1,27 @@
+######### Using External file ###########
+-- Add maven dependency
+    > spring-cloud-starter
+    > spring-boot-starter-actuator
+
+-- Add AppConfig file for read property and @RefreshScope annotation
+-- keep application.yml in external location from jar file (Program Argument)
+    >> add properties in --> --spring.config.additional-location=file:D:/app-config/dynamic-config.yml
+
+-- API:
+    > http://localhost:8080/localFile >> api testing
+    > http://localhost:8080/actuator/refresh >> Refresh value
+
+######### Using Spring-cloud-config file ###########
+
+-- for git/cloud config, add below property in yml file
+  config:
+    import: "configserver:http://localhost:8888"
+
+-- add maven
+    > spring-cloud-starter-config
+
+    Note:
+    >> Dynamic-config-server read value from github config (Central server, where multiple app will get config from this server)
+    >> Dynamic config read config from Dynamic-config-server
+
+

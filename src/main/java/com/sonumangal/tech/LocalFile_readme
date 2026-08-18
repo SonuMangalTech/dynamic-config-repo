@@ -23,5 +23,6 @@
     Note:
     >> Dynamic-config-server read value from github config (Central server, where multiple app will get config from this server)
     >> Dynamic config read config from Dynamic-config-server
+    >> server must be restart
 
 

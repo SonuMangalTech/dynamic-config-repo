@@ -1,4 +1,4 @@
-package com.sonumangal.tech;
+package com.deeson.labs;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

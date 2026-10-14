@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.sonumangal.tech</groupId>
+    <groupId>com.deeson.labs</groupId>
     <artifactId>DynamicConfig</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
